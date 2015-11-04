@@ -9,26 +9,35 @@
 				<title>Problem Statement</title>
         <description>&lt;h1&gt;Version 3&lt;/h1&gt;
 
-&lt;p&gt;Finding typical positions of objects in environments.
-Finding correlations in data(poistion of objects)
-Finding patterns in locations of objects over an entire day as well as joint correlation
-among additional attributes(day of the week, holiday, context of day)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Finding typical positions of objects in environments.&lt;/li&gt;
+&lt;li&gt;Finding correlations in data(poistion of objects)&lt;/li&gt;
+&lt;li&gt;Finding patterns in locations of objects over an entire day as well as joint correlation
+among additional attributes(day of the week, holiday, context of day)&lt;/li&gt;
+&lt;/ul&gt;
+
 
 &lt;h1&gt;Version 2&lt;/h1&gt;
 
-&lt;p&gt;Finding typical positions of objects in the environments.
-We provide some information regarding the typical arrangement of the
-environments (what are the planar surfaces, what are they called)
-The thesis is to bridge the gap between the Qualitative and Qantitative
-representation of the data
-We need to think of a small demo of using this data to be fed to a golog
-planner&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Finding typical positions of objects in the environments.&lt;/li&gt;
+&lt;li&gt;We provide some information regarding the typical arrangement of the
+environments (what are the planar surfaces, what are they called)&lt;/li&gt;
+&lt;li&gt;The thesis is to bridge the gap between the Qualitative and Qantitative
+representation of the data&lt;/li&gt;
+&lt;li&gt;We need to think of a small demo of using this data to be fed to a golog
+planner&lt;/li&gt;
+&lt;/ul&gt;
+
 
 &lt;h1&gt;Version 1&lt;/h1&gt;
 
-&lt;p&gt;Remembering sightings of objects with position and time.
-Performing spatio-temporal clustering to learn about typical positions in the
-environment reducing the time to find and retrieve objects.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Remembering sightings of objects with position and time.&lt;/li&gt;
+&lt;li&gt;Performing spatio-temporal clustering to learn about typical positions in the
+environment reducing the time to find and retrieve objects.&lt;/li&gt;
+&lt;/ul&gt;
+
 </description>
 				<pubDate>Wed, 04 Nov 2015 00:00:00 +0100</pubDate>
 				<link>/2015/11/04/problem-statement.html</link>

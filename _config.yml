@@ -3,7 +3,7 @@
 # # # # # # # #
 
 # Basic
-name:               "Kiko"
+name:               "Space Time"
 
 # URL
 baseurl:            ""
@@ -14,11 +14,11 @@ permalink:          /:year/:month/:day/:title.html
 markdown:           rdiscount
 
 # Navigation
-nav:
-  - name:           "About"
-    href:           "//kiko.gfjaru.com/about"
-  - name:           "Download"
-    href:           "//github.com/gfjaru/Kiko/releases"
+#nav:
+#  - name:           "About"
+#    href:           "//kiko.gfjaru.com/about"
+#  - name:           "Download"
+#    href:           "//github.com/gfjaru/Kiko/releases"
 
 # Sass
 sass:

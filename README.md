@@ -7,7 +7,8 @@ My Blog for understanding spatial temporal properties in robotics.
 
 
 
-
+# Command
+git subtree push --prefix _site/ origin gh-pages
 
 # License
 

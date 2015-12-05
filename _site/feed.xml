@@ -6,8 +6,108 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Statistics vs Frequentist vs Bayesian</title>
+        <description>&lt;p&gt;This is a blog to conclude my understanding about the different approaches that can be
+used to comment and infer knowledge from the data available.&lt;/p&gt;
+
+&lt;p&gt;The approaches can be broadly seperated into 3 groups
+* Statistical approach
+* Frequentist approach
+* Bayesian approach&lt;/p&gt;
+
+&lt;p&gt;The selection of the approach depends on various factors some major ones are
+- The answers we want to infer from the data
+- The amount of data
+- The information regarding the purity of the data
+- Prior information of the data&lt;/p&gt;
+
+&lt;h1&gt;Example&lt;/h1&gt;
+
+&lt;p&gt;This can be more detailed explained with an example on how to select which
+approach to take.
+We can take a robotics example of a vison based marker detection.
+The QR marker is placed in front of the camera and it is used to detect the
+distance of the marker wrt to the camera.
+We get a series of readings from the camera of the distance based on this we
+need to make an inference on the actual distance of the marker&lt;/p&gt;
+
+&lt;h2&gt;Statistical approach&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Input data : Distance measured d_i&lt;/li&gt;
+&lt;li&gt;Method : Take a mean of all the readings and based on central limit theorem the
+actual value will lie be the mean&lt;/li&gt;
+&lt;li&gt;Output : D = mean(d_i)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Frequentis approach&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Input data : Now along with distance measured you also have the error range of the
+readings of the camera. We can include this to infer in the frequentist
+approach.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Method : Creating the likelihood function which is basically multiplication of
+the gaussian function&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;So for each reading we have the observation and the error range of the camera.
+This can be converted to a gaussian distribution with mean value as the
+observation and the error range as the sigma.
+So for n observations we will have n gaussian distributions.
+We will multiply these gaussian distribution(Likelihood equation).
+The resulting distribution will be the distribution of the infered distance.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ouput : P(D) = Likelihood(d_i)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Bayesian approach&lt;/h2&gt;
+
+&lt;p&gt;Input data : Distance measured .
+Error range of the camera .
+Now along with this we have an additional information that based on the
+distance of the camera the error range varies. If the marker is near the camera
+the error range is less while if the marker is far away from the camera the
+error range is high .&lt;/p&gt;
+
+&lt;p&gt;NOTE : need to think&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;trigger_alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Lorem Ipsum dolor sit amet&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;trigger_alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+
+</description>
+				<pubDate>Sat, 05 Dec 2015 00:00:00 +0100</pubDate>
+				<link>/2015/12/05/statistics-frequentist-bayes.html</link>
+				<guid isPermaLink="true">/2015/12/05/statistics-frequentist-bayes.html</guid>
+			</item>
+		
+			<item>
 				<title>Problem Statement</title>
-        <description>&lt;h1&gt;Version 3&lt;/h1&gt;
+        <description>&lt;h1&gt;Version 4&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Finding typical positions of objects in environments&lt;/li&gt;
+&lt;li&gt;Mapping a single environment with long running environments
+
+&lt;h2&gt;Delta from other finding objects in environments&lt;/h2&gt;
+
+&lt;p&gt;1 Learning locations in a single environment with a long running robot for multiple days
+while most in the literature learn a general kitchen or a general office
+environment
+2 Adding temporal information to the object location and finding its influnence
+in the position of the objects&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h1&gt;Version 3&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Finding typical positions of objects in environments.&lt;/li&gt;

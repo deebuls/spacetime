@@ -8,6 +8,8 @@ My Blog for understanding spatial temporal properties in robotics.
 
 
 # Command
+jekyll build
+git add, commit and push all
 git subtree push --prefix _site/ origin gh-pages
 
 # License

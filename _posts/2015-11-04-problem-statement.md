@@ -5,11 +5,11 @@ title: Problem Statement
 #Version 4
 * Finding typical positions of objects in environments
 * Mapping a single environment with long running environments
-## Delta from other finding objects in environments
-1 Learning locations in a single environment with a long running robot for multiple days
+### Delta from other finding objects in environments
+- Learning locations in a single environment with a long running robot for multiple days
 while most in the literature learn a general kitchen or a general office
 environment
-2 Adding temporal information to the object location and finding its influnence
+- Adding temporal information to the object location and finding its influnence
 in the position of the objects
 
 #Version 3

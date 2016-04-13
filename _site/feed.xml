@@ -6,6 +6,66 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Whats I know about Probabilistic Programming</title>
+        <description>&lt;p&gt;&lt;strong&gt;Probabilistic Programming&lt;/strong&gt; is an upcoming filed in machine learning focusing
+basically on developign new programming languages to do what can be generalized
+as &lt;strong&gt;Model Based Machine Learning&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Many universities and industry giants have put formard their resources to
+develop new languages. I will try to summarize in the post what all I have
+learned about these.&lt;/p&gt;
+
+&lt;h1&gt;Programming Languages&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Pymc3&lt;/li&gt;
+&lt;li&gt;BayesPy&lt;/li&gt;
+&lt;li&gt;Infer.Net&lt;/li&gt;
+&lt;li&gt;Figaro&lt;/li&gt;
+&lt;li&gt;Church&lt;/li&gt;
+&lt;li&gt;BayesDB&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h1&gt;Websites&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;PPAML&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://ppaml.galois.com/wiki/wiki/Resources&quot;&gt;Other list of resources&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://probabilistic-programming.org/wiki/Home&quot;&gt;Daniel Roy Resources&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h1&gt;Books&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://web4.cs.ucl.ac.uk/staff/D.Barber/pmwiki/pmwiki.php?n=Brml.Online&quot;&gt;Bayesian Reasoning and Machine
+Learning&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Book available online&lt;/li&gt;
+&lt;li&gt;Has a matlab based toolbox&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.mbmlbook.com/&quot;&gt;Model Based Machine Learning&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Very intutive idea of Probabilistic Programming, Generative Modelling&lt;/li&gt;
+&lt;li&gt;Inductive Learning. Learning through examples.&lt;/li&gt;
+&lt;li&gt;Example using Infer.net&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h1&gt;Ipython Notebooks&lt;/h1&gt;
+</description>
+				<pubDate>Wed, 13 Apr 2016 00:00:00 +0200</pubDate>
+				<link>/2016/04/13/what-i-know-about-probability-programming.html</link>
+				<guid isPermaLink="true">/2016/04/13/what-i-know-about-probability-programming.html</guid>
+			</item>
+		
+			<item>
 				<title>Probability explained !</title>
         <description>&lt;p&gt;Proabability as we know can be defined in many ways. Will try to amalgamate
 different definitions.&lt;/p&gt;
@@ -176,7 +236,23 @@ error range is high .&lt;/p&gt;
 		
 			<item>
 				<title>Problem Statement</title>
-        <description>&lt;h1&gt;Version 4&lt;/h1&gt;
+        <description>&lt;h1&gt;Questions being asked&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Where can I find a specific object in a given environment?&lt;/li&gt;
+&lt;li&gt;Where can I find a specific object in a given environment at time t ?&lt;/li&gt;
+&lt;li&gt;Learning from sparse dataset:
+
+&lt;ul&gt;
+&lt;li&gt;How can we predict for times where we have no dataset&lt;/li&gt;
+&lt;li&gt;How many data is required for learning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Not seeing is also learning&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h1&gt;Version 4&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Finding typical positions of objects in environments&lt;/li&gt;

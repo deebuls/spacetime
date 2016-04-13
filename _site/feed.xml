@@ -6,20 +6,103 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Probability explained !</title>
+        <description>&lt;p&gt;Proabability as we know can be defined in many ways. Will try to amalgamate
+different definitions.&lt;/p&gt;
+
+&lt;h1&gt;Observable and Un-Observeable variables&lt;/h1&gt;
+
+&lt;p&gt;The outcomes of an experiment or data which can be read are called as an
+&lt;strong&gt;observable variables&lt;/strong&gt;. While extra pieces of knowledge that we do not have
+access to are names as the &lt;strong&gt;unobservable variables&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h1&gt;Process&lt;/h1&gt;
+
+&lt;p&gt;Based on the &lt;strong&gt;unobservable variables&lt;/strong&gt; the process is a probability
+distribution which determines the
+&lt;strong&gt;observable variables&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h1&gt;Formulation&lt;/h1&gt;
+
+&lt;p&gt;Let &lt;strong&gt;z&lt;/strong&gt; be the unobservable variables and &lt;strong&gt;x&lt;/strong&gt; be the observable variables,
+then we have&lt;/p&gt;
+
+&lt;p&gt;$$x = f(z)$$&lt;/p&gt;
+
+&lt;p&gt;where f is the function determining the observable based on the unobservable
+variables. But this cannot be used to model the &lt;strong&gt;process&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let us define outcome X as a random variable drawn from a probability
+distribution P(X = x) that specifies the process&lt;/p&gt;
+
+&lt;h1&gt;Example&lt;/h1&gt;
+
+&lt;h2&gt;Coin toss&lt;/h2&gt;
+
+&lt;h3&gt;Observable Variable :&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;Outcomes of coin toss (head or toss)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;Unobservable Variable :&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt; parameter of the distribution(\\p_0\\)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;Process : P(X = head) and P(X = tail)&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;Since there are only 2 outcomes the underlying distrbution is Bernouli distribution.
+Bernouli distribution can be expressed by single parameter. In this case
+\\p_0\\ i.e. P(X = head ) = \\p_0\\  P(X = tail )= 1 - P(X = head)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;Sensor readings&lt;/h2&gt;
+
+&lt;h3&gt;Observable Variable :&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;Observed sensor readings
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;Unobservable Variable :&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;parameter of the distribution(\\ \mu and \sigma \\)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;Process : \ Gauss(\mu and \sigma) \&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;The underlying process can be seen as a Gaussian distribution with the mu
+as the observed reading and the sigma as the error in the measuring device.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1&gt;Samples&lt;/h1&gt;
+
+&lt;p&gt;What if we do not know the P(X) and want to estimate this from a single then we
+have to depend on statistics to determine this.&lt;/p&gt;
+</description>
+				<pubDate>Wed, 16 Dec 2015 00:00:00 +0100</pubDate>
+				<link>/2015/12/16/probability-explained.html</link>
+				<guid isPermaLink="true">/2015/12/16/probability-explained.html</guid>
+			</item>
+		
+			<item>
 				<title>Statistics vs Frequentist vs Bayesian</title>
         <description>&lt;p&gt;This is a blog to conclude my understanding about the different approaches that can be
 used to comment and infer knowledge from the data available.&lt;/p&gt;
 
-&lt;p&gt;The approaches can be broadly seperated into 3 groups
-* Statistical approach
-* Frequentist approach
-* Bayesian approach&lt;/p&gt;
+&lt;p&gt;The approaches can be broadly seperated into 3 groups&lt;/p&gt;
 
-&lt;p&gt;The selection of the approach depends on various factors some major ones are
-- The answers we want to infer from the data
-- The amount of data
+&lt;pre&gt;&lt;code&gt;- Statistical approach
+- Frequentist approach
+- Bayesian approach
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The selection of the approach depends on various factors some major ones are&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;- The answers we want to infer from the data
+- The amount of data 
 - The information regarding the purity of the data
-- Prior information of the data&lt;/p&gt;
+- Prior information of the data
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h1&gt;Example&lt;/h1&gt;
 
@@ -30,6 +113,8 @@ The QR marker is placed in front of the camera and it is used to detect the
 distance of the marker wrt to the camera.
 We get a series of readings from the camera of the distance based on this we
 need to make an inference on the actual distance of the marker&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/arsingle.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
 
 &lt;h2&gt;Statistical approach&lt;/h2&gt;
 
@@ -262,6 +347,17 @@ environment reducing the time to find and retrieve objects.&lt;/li&gt;
 &lt;blockquote&gt;&lt;p&gt;Jekyll is a simple, blog aware, static site generator. It takes a template directory [...] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;&lt;/blockquote&gt;
 
 &lt;p&gt;It's an immensely useful tool. Find out more by &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div id=&quot;example&quot;&gt;&lt;/div&gt;
+
+
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.12/d3.js&quot;&gt;&lt;/script&gt;
+
+
+&lt;script src=&quot;/spacetime/js/embed-d3.js&quot;&gt;&lt;/script&gt;
+
+
+
 </description>
 				<pubDate>Sat, 08 Aug 2015 00:00:00 +0200</pubDate>
 				<link>/2015/08/08/whats-jekyll.html</link>

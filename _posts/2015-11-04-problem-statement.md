@@ -2,6 +2,14 @@
 title: Problem Statement
 ---
 
+#Questions being asked
+* Where can I find a specific object in a given environment?
+* Where can I find a specific object in a given environment at time t ?
+* Learning from sparse dataset:
+    - How can we predict for times where we have no dataset
+    - How many data is required for learning
+* Not seeing is also learning
+
 #Version 4
 * Finding typical positions of objects in environments
 * Mapping a single environment with long running environments

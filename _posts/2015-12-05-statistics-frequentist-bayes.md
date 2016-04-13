@@ -6,15 +6,17 @@ This is a blog to conclude my understanding about the different approaches that 
 used to comment and infer knowledge from the data available.
 
 The approaches can be broadly seperated into 3 groups 
-* Statistical approach
-* Frequentist approach
-* Bayesian approach
+
+    - Statistical approach
+    - Frequentist approach
+    - Bayesian approach
 
 The selection of the approach depends on various factors some major ones are 
-- The answers we want to infer from the data
-- The amount of data 
-- The information regarding the purity of the data
-- Prior information of the data
+
+    - The answers we want to infer from the data
+    - The amount of data 
+    - The information regarding the purity of the data
+    - Prior information of the data
 
 # Example
 This can be more detailed explained with an example on how to select which
@@ -25,6 +27,7 @@ distance of the marker wrt to the camera.
 We get a series of readings from the camera of the distance based on this we
 need to make an inference on the actual distance of the marker
 
+![My helpful screenshot](/assets/arsingle.jpg)
 ## Statistical approach
 - Input data : Distance measured d_i
 - Method : Take a mean of all the readings and based on central limit theorem the

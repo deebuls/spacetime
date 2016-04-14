@@ -6,6 +6,25 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Important workshops and publications</title>
+        <description>&lt;p&gt;List of Important workshops:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://liara.uqac.ca/aaai16-workshop-atse.htm&quot;&gt;AAAI-16 Workshop on artificial intelligence applied to assistive
+technologies and smart
+environments&lt;/a&gt;
+ Laste Date : October end&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;&quot;&gt;ICRA 2016 Workshop: AI for Long-term Autonomy&lt;/a&gt;
+ Last Date : March end&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+				<pubDate>Thu, 14 Apr 2016 00:00:00 +0200</pubDate>
+				<link>/2016/04/14/workshops-publications-learning-smart-home.html</link>
+				<guid isPermaLink="true">/2016/04/14/workshops-publications-learning-smart-home.html</guid>
+			</item>
+		
+			<item>
 				<title>Whats I know about Probabilistic Programming</title>
         <description>&lt;p&gt;&lt;strong&gt;Probabilistic Programming&lt;/strong&gt; is an upcoming filed in machine learning focusing
 basically on developign new programming languages to do what can be generalized

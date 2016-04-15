@@ -6,6 +6,23 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Funny Quotes of Modelling</title>
+        <description>&lt;ul&gt;
+&lt;li&gt;All Model are wrong but some are useful-Box,1979&lt;/li&gt;
+&lt;li&gt;Bayesian inference is reallocation of credibility across possbilities: John K
+kruschke. Doing Bayesian Data Analysis. Chapter 2&lt;/li&gt;
+&lt;li&gt;“How often have I said to you that when you have eliminated the impossible,
+ whatever remains, however improbable, must be the truth?” (Doyle, 1890,
+ chap. 6) Sherlock Homes to Doctor Watson&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+				<pubDate>Fri, 15 Apr 2016 00:00:00 +0200</pubDate>
+				<link>/2016/04/15/model-learning-quotes.html</link>
+				<guid isPermaLink="true">/2016/04/15/model-learning-quotes.html</guid>
+			</item>
+		
+			<item>
 				<title>Important workshops and publications</title>
         <description>&lt;p&gt;List of Important workshops:&lt;/p&gt;
 

@@ -78,6 +78,16 @@ Learning&lt;/a&gt;
 
 
 &lt;h1&gt;Ipython Notebooks&lt;/h1&gt;
+
+&lt;h1&gt;Bayesian Data Analysis&lt;/h1&gt;
+
+&lt;h2&gt;Books&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.indiana.edu/~kruschke/&quot;&gt;Doing Bayesian Data Analysis&lt;/a&gt;
+  Very popular book. Implementation in R, Pymc3 available of examples&lt;/li&gt;
+&lt;/ul&gt;
+
 </description>
 				<pubDate>Wed, 13 Apr 2016 00:00:00 +0200</pubDate>
 				<link>/2016/04/13/what-i-know-about-probability-programming.html</link>

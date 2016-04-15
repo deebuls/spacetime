@@ -35,4 +35,9 @@ learned about these.
 
 # Ipython Notebooks
 
+# Bayesian Data Analysis 
+
+## Books
+- [Doing Bayesian Data Analysis](http://www.indiana.edu/~kruschke/)
+    Very popular book. Implementation in R, Pymc3 available of examples
 

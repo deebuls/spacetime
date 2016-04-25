@@ -10,16 +10,64 @@
         <description>&lt;p&gt;Bayes rule is one the most fundamental thing we learn in probabilistic theory,
 yet the application of this simple rule seems a daunting effort. One of the
 reason being the simplification of the problem to the coin and dice example.
-There is a quote by Einstein which can be paraphased as this &quot;Everything needs
-to be made simple but not simpler&quot;. The above quote suits exact to our problem
+There is a quote by Einstein which can be paraphased as this 
+&amp;gt; “Everything needs to be made simple but not simpler”.
+The above quote suits exact to our problem
 here, we are so used to the coin and the dice problem that we have lost
 interest in the field of probability. In this blog I will try to capture some
 interesting problems to which bayesian rule can be applied to make proper
 insight from the data.&lt;/p&gt;
 
-&lt;h2&gt;Bayes' theorem&lt;/h2&gt;
+&lt;h2 id=&quot;bayes-theorem&quot;&gt;Bayes’ theorem&lt;/h2&gt;
+&lt;p&gt;\[ P(A \mid B) = \frac{P(B \mid A) \, P(A)}{P(B)} \]&lt;/p&gt;
 
-&lt;p&gt;$$ P(A \mid B) = \frac{P(B \mid A) \, P(A)}{P(B)} $$&lt;/p&gt;
+&lt;p&gt;We all are very much familiar with this theorem, we have prooved this in our
+schools but the usage still reamins a question mark who is &lt;code&gt;A&lt;/code&gt; and &lt;code&gt;B&lt;/code&gt;. How
+does this theorem help me solving real world problems. But to the matter of
+fact the whole world of Bayesian inference stands on the strong shoulders of
+this very simple formula. So lets make an effort to understand everything about
+the A and B and in my case through examples (Emperical learning : Learning from
+real world data and not by metaphysical proofs)&lt;/p&gt;
+
+&lt;p&gt;So a lot of insights can be gained by renaming the variable A and B in the
+theorem. From literature the variable is named in many ways, from my
+prespective the most useful name which can be used in almost all examples is
+&lt;code&gt;Evidence&lt;/code&gt; and &lt;code&gt;Fact&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;So lets rename the variables and rewrite the Baye’s theorem&lt;/p&gt;
+
+&lt;p&gt;\[ P(fact \mid evidence) = \frac{P(evidence \mid fact) \, P(fact)}{P(evidence)} \]&lt;/p&gt;
+
+&lt;p&gt;So lets define both :&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Fact&lt;/code&gt; : The latent variable we are trying to learn
+&lt;code&gt;Evidence&lt;/code&gt; : The observations we make during trials from which we have to
+learn.&lt;/p&gt;
+
+&lt;p&gt;From the definition we have made the assumption that is predominant in naming
+the variables as fact and evidence, which is that all the examples explained
+here will have some hidden variable and some observations. Baye’s theorem is
+not limited to only such pattern recognition problems but cab be applied in
+many different places. But since these kind of problems form the major chunk 
+ in the machine learning problem set.&lt;/p&gt;
+
+&lt;h2 id=&quot;examples&quot;&gt;Examples:&lt;/h2&gt;
+&lt;p&gt;Lets find examples which can be formulated as the evidence, fact pairs.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;There is a website which you are supposed to market. After 1 week of initial
+marketing the results was - 833 unique visitors out of which 18 created an
+account. Now the question is if we do more marketing and increase the unique
+visitors count to 10000 then how many people will register? How confident are
+you about the results?&lt;/p&gt;
+
+    &lt;p&gt;Evidence : 18 out of 833 unique visitor made account.
+ Fact : Probability that an unique visitor will create an account.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
 </description>
 				<pubDate>Mon, 25 Apr 2016 00:00:00 +0200</pubDate>
 				<link>/2016/04/25/bayes-evidence-facts-examples.html</link>
@@ -31,14 +79,13 @@ insight from the data.&lt;/p&gt;
         <description>&lt;p&gt;A small collection of terms used in the field&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Bayesian statistical inference : (lee2008cognitive)&lt;/li&gt;
-&lt;li&gt;Bayesian methods : (lee2008cognitive)
+  &lt;li&gt;Bayesian statistical inference : (lee2008cognitive)&lt;/li&gt;
+  &lt;li&gt;Bayesian methods : (lee2008cognitive)
  offers principled and comprehensive approach to relate model to data&lt;/li&gt;
-&lt;li&gt;Bayesian analysis : (lee2008cognitive)&lt;/li&gt;
-&lt;li&gt;Bayesian Prespective : with prioirs and likelihoods&lt;/li&gt;
-&lt;li&gt;Bayesian Inference&lt;/li&gt;
+  &lt;li&gt;Bayesian analysis : (lee2008cognitive)&lt;/li&gt;
+  &lt;li&gt;Bayesian Prespective : with prioirs and likelihoods&lt;/li&gt;
+  &lt;li&gt;Bayesian Inference&lt;/li&gt;
 &lt;/ol&gt;
-
 </description>
 				<pubDate>Mon, 18 Apr 2016 00:00:00 +0200</pubDate>
 				<link>/2016/04/18/terms-used.html</link>
@@ -50,23 +97,29 @@ insight from the data.&lt;/p&gt;
         <description>&lt;p&gt;List of all the distributions their visualizations and the example dataset on
 which they can be applied&lt;/p&gt;
 
-&lt;h1&gt;Discrete Distributions&lt;/h1&gt;
-
+&lt;h1 id=&quot;discrete-distributions&quot;&gt;Discrete Distributions&lt;/h1&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Bernouli Distribution :&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Binomial Distribution : For counts (p,n)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Poisson Distribution : For counts (p)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Log Binomial ?&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Negative Binomial ?&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Bernouli Distribution :&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Binomial Distribution : For counts (p,n)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Poisson Distribution : For counts (p)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Log Binomial ?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Negative Binomial ?&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
 
-
-&lt;h1&gt;Continuous Distributions&lt;/h1&gt;
-
+&lt;h1 id=&quot;continuous-distributions&quot;&gt;Continuous Distributions&lt;/h1&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
-
 </description>
 				<pubDate>Sat, 16 Apr 2016 00:00:00 +0200</pubDate>
 				<link>/2016/04/16/distributions.html</link>
@@ -76,14 +129,13 @@ which they can be applied&lt;/p&gt;
 			<item>
 				<title>Funny Quotes of Modelling</title>
         <description>&lt;ul&gt;
-&lt;li&gt;All Model are wrong but some are useful-Box,1979&lt;/li&gt;
-&lt;li&gt;Bayesian inference is reallocation of credibility across possbilities: John K
+  &lt;li&gt;All Model are wrong but some are useful-Box,1979&lt;/li&gt;
+  &lt;li&gt;Bayesian inference is reallocation of credibility across possbilities: John K
 kruschke. Doing Bayesian Data Analysis. Chapter 2&lt;/li&gt;
-&lt;li&gt;“How often have I said to you that when you have eliminated the impossible,
+  &lt;li&gt;“How often have I said to you that when you have eliminated the impossible,
  whatever remains, however improbable, must be the truth?” (Doyle, 1890,
  chap. 6) Sherlock Homes to Doctor Watson&lt;/li&gt;
 &lt;/ul&gt;
-
 </description>
 				<pubDate>Fri, 15 Apr 2016 00:00:00 +0200</pubDate>
 				<link>/2016/04/15/model-learning-quotes.html</link>
@@ -95,14 +147,17 @@ kruschke. Doing Bayesian Data Analysis. Chapter 2&lt;/li&gt;
         <description>&lt;p&gt;List of Important workshops:&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://liara.uqac.ca/aaai16-workshop-atse.htm&quot;&gt;AAAI-16 Workshop on artificial intelligence applied to assistive
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://liara.uqac.ca/aaai16-workshop-atse.htm&quot;&gt;AAAI-16 Workshop on artificial intelligence applied to assistive
 technologies and smart
 environments&lt;/a&gt;
- Laste Date : October end&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;&quot;&gt;ICRA 2016 Workshop: AI for Long-term Autonomy&lt;/a&gt;
- Last Date : March end&lt;/p&gt;&lt;/li&gt;
+ Laste Date : October end&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;&quot;&gt;ICRA 2016 Workshop: AI for Long-term Autonomy&lt;/a&gt;
+ Last Date : March end&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
-
 </description>
 				<pubDate>Thu, 14 Apr 2016 00:00:00 +0200</pubDate>
 				<link>/2016/04/14/workshops-publications-learning-smart-home.html</link>
@@ -119,57 +174,48 @@ as &lt;strong&gt;Model Based Machine Learning&lt;/strong&gt;.&lt;/p&gt;
 develop new languages. I will try to summarize in the post what all I have
 learned about these.&lt;/p&gt;
 
-&lt;h1&gt;Programming Languages&lt;/h1&gt;
-
+&lt;h1 id=&quot;programming-languages&quot;&gt;Programming Languages&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;Pymc3&lt;/li&gt;
-&lt;li&gt;BayesPy&lt;/li&gt;
-&lt;li&gt;Infer.Net&lt;/li&gt;
-&lt;li&gt;Figaro&lt;/li&gt;
-&lt;li&gt;Church&lt;/li&gt;
-&lt;li&gt;BayesDB&lt;/li&gt;
+  &lt;li&gt;Pymc3&lt;/li&gt;
+  &lt;li&gt;BayesPy&lt;/li&gt;
+  &lt;li&gt;Infer.Net&lt;/li&gt;
+  &lt;li&gt;Figaro&lt;/li&gt;
+  &lt;li&gt;Church&lt;/li&gt;
+  &lt;li&gt;BayesDB&lt;/li&gt;
 &lt;/ul&gt;
 
-
-&lt;h1&gt;Websites&lt;/h1&gt;
-
+&lt;h1 id=&quot;websites&quot;&gt;Websites&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;PPAML&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://ppaml.galois.com/wiki/wiki/Resources&quot;&gt;Other list of resources&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://probabilistic-programming.org/wiki/Home&quot;&gt;Daniel Roy Resources&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&gt;PPAML&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ppaml.galois.com/wiki/wiki/Resources&quot;&gt;Other list of resources&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://probabilistic-programming.org/wiki/Home&quot;&gt;Daniel Roy Resources&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-
-&lt;h1&gt;Books&lt;/h1&gt;
-
+&lt;h1 id=&quot;books&quot;&gt;Books&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://web4.cs.ucl.ac.uk/staff/D.Barber/pmwiki/pmwiki.php?n=Brml.Online&quot;&gt;Bayesian Reasoning and Machine
+  &lt;li&gt;&lt;a href=&quot;http://web4.cs.ucl.ac.uk/staff/D.Barber/pmwiki/pmwiki.php?n=Brml.Online&quot;&gt;Bayesian Reasoning and Machine
 Learning&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Book available online&lt;/li&gt;
-&lt;li&gt;Has a matlab based toolbox&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.mbmlbook.com/&quot;&gt;Model Based Machine Learning&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Very intutive idea of Probabilistic Programming, Generative Modelling&lt;/li&gt;
-&lt;li&gt;Inductive Learning. Learning through examples.&lt;/li&gt;
-&lt;li&gt;Example using Infer.net&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Book available online&lt;/li&gt;
+      &lt;li&gt;Has a matlab based toolbox&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.mbmlbook.com/&quot;&gt;Model Based Machine Learning&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Very intutive idea of Probabilistic Programming, Generative Modelling&lt;/li&gt;
+      &lt;li&gt;Inductive Learning. Learning through examples.&lt;/li&gt;
+      &lt;li&gt;Example using Infer.net&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h1 id=&quot;ipython-notebooks&quot;&gt;Ipython Notebooks&lt;/h1&gt;
 
-&lt;h1&gt;Ipython Notebooks&lt;/h1&gt;
+&lt;h1 id=&quot;bayesian-data-analysis&quot;&gt;Bayesian Data Analysis&lt;/h1&gt;
 
-&lt;h1&gt;Bayesian Data Analysis&lt;/h1&gt;
-
-&lt;h2&gt;Books&lt;/h2&gt;
-
+&lt;h2 id=&quot;books-1&quot;&gt;Books&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.indiana.edu/~kruschke/&quot;&gt;Doing Bayesian Data Analysis&lt;/a&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.indiana.edu/~kruschke/&quot;&gt;Doing Bayesian Data Analysis&lt;/a&gt;
   Very popular book. Implementation in R, Pymc3 available of examples&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -184,24 +230,21 @@ Learning&lt;/a&gt;
         <description>&lt;p&gt;Proabability as we know can be defined in many ways. Will try to amalgamate
 different definitions.&lt;/p&gt;
 
-&lt;h1&gt;Observable and Un-Observeable variables&lt;/h1&gt;
-
+&lt;h1 id=&quot;observable-and-un-observeable-variables&quot;&gt;Observable and Un-Observeable variables&lt;/h1&gt;
 &lt;p&gt;The outcomes of an experiment or data which can be read are called as an
 &lt;strong&gt;observable variables&lt;/strong&gt;. While extra pieces of knowledge that we do not have
 access to are names as the &lt;strong&gt;unobservable variables&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;h1&gt;Process&lt;/h1&gt;
-
+&lt;h1 id=&quot;process&quot;&gt;Process&lt;/h1&gt;
 &lt;p&gt;Based on the &lt;strong&gt;unobservable variables&lt;/strong&gt; the process is a probability
 distribution which determines the
 &lt;strong&gt;observable variables&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;h1&gt;Formulation&lt;/h1&gt;
-
+&lt;h1 id=&quot;formulation&quot;&gt;Formulation&lt;/h1&gt;
 &lt;p&gt;Let &lt;strong&gt;z&lt;/strong&gt; be the unobservable variables and &lt;strong&gt;x&lt;/strong&gt; be the observable variables,
 then we have&lt;/p&gt;
 
-&lt;p&gt;$$x = f(z)$$&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x = f(z)&lt;/script&gt;
 
 &lt;p&gt;where f is the function determining the observable based on the unobservable
 variables. But this cannot be used to model the &lt;strong&gt;process&lt;/strong&gt;.&lt;/p&gt;
@@ -209,49 +252,31 @@ variables. But this cannot be used to model the &lt;strong&gt;process&lt;/strong
 &lt;p&gt;Let us define outcome X as a random variable drawn from a probability
 distribution P(X = x) that specifies the process&lt;/p&gt;
 
-&lt;h1&gt;Example&lt;/h1&gt;
+&lt;h1 id=&quot;example&quot;&gt;Example&lt;/h1&gt;
 
-&lt;h2&gt;Coin toss&lt;/h2&gt;
+&lt;h2 id=&quot;coin-toss&quot;&gt;Coin toss&lt;/h2&gt;
 
-&lt;h3&gt;Observable Variable :&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;Outcomes of coin toss (head or toss)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3&gt;Unobservable Variable :&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt; parameter of the distribution(\\p_0\\)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3&gt;Process : P(X = head) and P(X = tail)&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;Since there are only 2 outcomes the underlying distrbution is Bernouli distribution.
+&lt;h3 id=&quot;observable-variable-&quot;&gt;Observable Variable :&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;Outcomes of coin toss (head or toss) ### Unobservable Variable :  
+ parameter of the distribution(\\p_0\\) ### Process : P(X = head) and P(X = tail)
+Since there are only 2 outcomes the underlying distrbution is Bernouli distribution.
 Bernouli distribution can be expressed by single parameter. In this case
 \\p_0\\ i.e. P(X = head ) = \\p_0\\  P(X = tail )= 1 - P(X = head)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2&gt;Sensor readings&lt;/h2&gt;
+&lt;h2 id=&quot;sensor-readings&quot;&gt;Sensor readings&lt;/h2&gt;
 
-&lt;h3&gt;Observable Variable :&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;Observed sensor readings
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3&gt;Unobservable Variable :&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;parameter of the distribution(\\ \mu and \sigma \\)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3&gt;Process : \ Gauss(\mu and \sigma) \&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;The underlying process can be seen as a Gaussian distribution with the mu
+&lt;h3 id=&quot;observable-variable--1&quot;&gt;Observable Variable :&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;Observed sensor readings ### Unobservable Variable :
+parameter of the distribution(\\ \mu and \sigma \\) ### Process : \\ Gauss(\mu and \sigma) \\
+The underlying process can be seen as a Gaussian distribution with the mu
 as the observed reading and the sigma as the error in the measuring device.
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1&gt;Samples&lt;/h1&gt;
-
+&lt;h1 id=&quot;samples&quot;&gt;Samples&lt;/h1&gt;
 &lt;p&gt;What if we do not know the P(X) and want to estimate this from a single then we
 have to depend on statistics to determine this.&lt;/p&gt;
+
 </description>
 				<pubDate>Wed, 16 Dec 2015 00:00:00 +0100</pubDate>
 				<link>/2015/12/16/probability-explained.html</link>
@@ -278,8 +303,7 @@ used to comment and infer knowledge from the data available.&lt;/p&gt;
 - Prior information of the data
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1&gt;Example&lt;/h1&gt;
-
+&lt;h1 id=&quot;example&quot;&gt;Example&lt;/h1&gt;
 &lt;p&gt;This can be more detailed explained with an example on how to select which
 approach to take.
 We can take a robotics example of a vison based marker detection.
@@ -288,28 +312,25 @@ distance of the marker wrt to the camera.
 We get a series of readings from the camera of the distance based on this we
 need to make an inference on the actual distance of the marker&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/arsingle.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/arsingle.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;
+## Statistical approach
+- Input data : Distance measured d_i
+- Method : Take a mean of all the readings and based on central limit theorem the
+actual value will lie be the mean
+- Output : D = mean(d_i)&lt;/p&gt;
 
-&lt;h2&gt;Statistical approach&lt;/h2&gt;
-
+&lt;h2 id=&quot;frequentis-approach&quot;&gt;Frequentis approach&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Input data : Distance measured d_i&lt;/li&gt;
-&lt;li&gt;Method : Take a mean of all the readings and based on central limit theorem the
-actual value will lie be the mean&lt;/li&gt;
-&lt;li&gt;Output : D = mean(d_i)&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h2&gt;Frequentis approach&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Input data : Now along with distance measured you also have the error range of the
+  &lt;li&gt;
+    &lt;p&gt;Input data : Now along with distance measured you also have the error range of the
 readings of the camera. We can include this to infer in the frequentist
-approach.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Method : Creating the likelihood function which is basically multiplication of
-the gaussian function&lt;/p&gt;&lt;/li&gt;
+approach.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Method : Creating the likelihood function which is basically multiplication of
+the gaussian function&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
-
 
 &lt;p&gt;So for each reading we have the observation and the error range of the camera.
 This can be converted to a gaussian distribution with mean value as the
@@ -319,12 +340,10 @@ We will multiply these gaussian distribution(Likelihood equation).
 The resulting distribution will be the distribution of the infered distance.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Ouput : P(D) = Likelihood(d_i)&lt;/li&gt;
+  &lt;li&gt;Ouput : P(D) = Likelihood(d_i)&lt;/li&gt;
 &lt;/ul&gt;
 
-
-&lt;h2&gt;Bayesian approach&lt;/h2&gt;
-
+&lt;h2 id=&quot;bayesian-approach&quot;&gt;Bayesian approach&lt;/h2&gt;
 &lt;p&gt;Input data : Distance measured .
 Error range of the camera .
 Now along with this we have an additional information that based on the
@@ -340,8 +359,6 @@ error range is high .&lt;/p&gt;
 
 &lt;span class=&quot;nx&quot;&gt;trigger_alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-
-
 </description>
 				<pubDate>Sat, 05 Dec 2015 00:00:00 +0100</pubDate>
 				<link>/2015/12/05/statistics-frequentist-bayes.html</link>
@@ -350,69 +367,57 @@ error range is high .&lt;/p&gt;
 		
 			<item>
 				<title>Problem Statement</title>
-        <description>&lt;h1&gt;Questions being asked&lt;/h1&gt;
-
+        <description>&lt;h1 id=&quot;questions-being-asked&quot;&gt;Questions being asked&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;Where can I find a specific object in a given environment?&lt;/li&gt;
-&lt;li&gt;Where can I find a specific object in a given environment at time t ?&lt;/li&gt;
-&lt;li&gt;Learning from sparse dataset:
-
-&lt;ul&gt;
-&lt;li&gt;How can we predict for times where we have no dataset&lt;/li&gt;
-&lt;li&gt;How many data is required for learning&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Not seeing is also learning&lt;/li&gt;
+  &lt;li&gt;Where can I find a specific object in a given environment?&lt;/li&gt;
+  &lt;li&gt;Where can I find a specific object in a given environment at time t ?&lt;/li&gt;
+  &lt;li&gt;Learning from sparse dataset:
+    &lt;ul&gt;
+      &lt;li&gt;How can we predict for times where we have no dataset&lt;/li&gt;
+      &lt;li&gt;How many data is required for learning&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Not seeing is also learning&lt;/li&gt;
 &lt;/ul&gt;
 
-
-&lt;h1&gt;Version 4&lt;/h1&gt;
-
+&lt;h1 id=&quot;version-4&quot;&gt;Version 4&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;Finding typical positions of objects in environments&lt;/li&gt;
-&lt;li&gt;Mapping a single environment with long running environments
-
-&lt;h3&gt;Delta from other finding objects in environments&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Learning locations in a single environment with a long running robot for multiple days
-while most in the literature learn a general kitchen or a general office
-environment&lt;/li&gt;
-&lt;li&gt;Adding temporal information to the object location and finding its influnence
-in the position of the objects&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+  &lt;li&gt;Finding typical positions of objects in environments&lt;/li&gt;
+  &lt;li&gt;Mapping a single environment with long running environments
+### Delta from other finding objects in environments
+    &lt;ul&gt;
+      &lt;li&gt;Learning locations in a single environment with a long running robot for multiple days
+  while most in the literature learn a general kitchen or a general office
+  environment&lt;/li&gt;
+      &lt;li&gt;Adding temporal information to the object location and finding its influnence
+  in the position of the objects&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-
-&lt;h1&gt;Version 3&lt;/h1&gt;
-
+&lt;h1 id=&quot;version-3&quot;&gt;Version 3&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;Finding typical positions of objects in environments.&lt;/li&gt;
-&lt;li&gt;Finding correlations in data(poistion of objects)&lt;/li&gt;
-&lt;li&gt;Finding patterns in locations of objects over an entire day as well as joint correlation
+  &lt;li&gt;Finding typical positions of objects in environments.&lt;/li&gt;
+  &lt;li&gt;Finding correlations in data(poistion of objects)&lt;/li&gt;
+  &lt;li&gt;Finding patterns in locations of objects over an entire day as well as joint correlation
 among additional attributes(day of the week, holiday, context of day)&lt;/li&gt;
 &lt;/ul&gt;
 
-
-&lt;h1&gt;Version 2&lt;/h1&gt;
-
+&lt;h1 id=&quot;version-2&quot;&gt;Version 2&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;Finding typical positions of objects in the environments.&lt;/li&gt;
-&lt;li&gt;We provide some information regarding the typical arrangement of the
+  &lt;li&gt;Finding typical positions of objects in the environments.&lt;/li&gt;
+  &lt;li&gt;We provide some information regarding the typical arrangement of the
 environments (what are the planar surfaces, what are they called)&lt;/li&gt;
-&lt;li&gt;The thesis is to bridge the gap between the Qualitative and Qantitative
+  &lt;li&gt;The thesis is to bridge the gap between the Qualitative and Qantitative
 representation of the data&lt;/li&gt;
-&lt;li&gt;We need to think of a small demo of using this data to be fed to a golog
+  &lt;li&gt;We need to think of a small demo of using this data to be fed to a golog
 planner&lt;/li&gt;
 &lt;/ul&gt;
 
-
-&lt;h1&gt;Version 1&lt;/h1&gt;
-
+&lt;h1 id=&quot;version-1&quot;&gt;Version 1&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;Remembering sightings of objects with position and time.&lt;/li&gt;
-&lt;li&gt;Performing spatio-temporal clustering to learn about typical positions in the
+  &lt;li&gt;Remembering sightings of objects with position and time.&lt;/li&gt;
+  &lt;li&gt;Performing spatio-temporal clustering to learn about typical positions in the
 environment reducing the time to find and retrieve objects.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -426,21 +431,19 @@ environment reducing the time to find and retrieve objects.&lt;/li&gt;
 				<title>Example content</title>
         <description>&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper est in imperdiet molestie. Curabitur aliquet sem in ante venenatis.&lt;/p&gt;
 
-
 &lt;p&gt;Morbi ultrices libero imperdiet &lt;a href=&quot;#&quot;&gt;lectus&lt;/a&gt; dignissim, sit amet bibendum nisl consectetur. Morbi erat purus, pretium at ligula tincidunt, faucibus commodo sem. Etiam vel porttitor est, vitae maximus ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien turpis, cursus non porta ac.&lt;/p&gt;
 
-&lt;h2&gt;Lorem&lt;/h2&gt;
-
+&lt;h2 id=&quot;lorem&quot;&gt;Lorem&lt;/h2&gt;
 &lt;p&gt;Quisque sodales euismod nibh, gravida venenatis nibh dignissim eget. Morbi gravida enim vel lectus aliquet aliquet.&lt;/p&gt;
 
-&lt;h3&gt;Ipsum&lt;/h3&gt;
-
+&lt;h3 id=&quot;ipsum&quot;&gt;Ipsum&lt;/h3&gt;
 &lt;p&gt;Nunc nec aliquam tellus. Etiam faucibus magna nibh, ut fermentum velit consectetur id. Nullam vehicula iaculis tortor, in cursus enim auctor vitae. Duis semper pulvinar justo, at vestibulum dolor. Cras fermentum nibh quis nisl imperdiet ornare. Sed nisi nunc, dictum sit amet gravida in, finibus rhoncus orci. Donec scelerisque commodo turpis ac venenatis.&lt;/p&gt;
 
-&lt;blockquote&gt;&lt;p&gt;Nam vitae commodo ex. Nunc vel tellus leo.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Nam vitae commodo ex. Nunc vel tellus leo.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;h2&gt;Dugem&lt;/h2&gt;
-
+&lt;h2 id=&quot;dugem&quot;&gt;Dugem&lt;/h2&gt;
 &lt;p&gt;Nullam vehicula iaculis tortor, in cursus enim auctor vitae. Duis semper pulvinar justo, at vestibulum dolor. Cras fermentum nibh quis nisl imperdiet ornare. Sed nisi nunc, dictum sit amet gravida in, finibus rhoncus orci. Donec scelerisque commodo turpis ac venenatis.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;trigger_alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
@@ -449,26 +452,22 @@ environment reducing the time to find and retrieve objects.&lt;/li&gt;
 
 &lt;span class=&quot;nx&quot;&gt;trigger_alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-
-&lt;h3&gt;Golem&lt;/h3&gt;
-
+&lt;h3 id=&quot;golem&quot;&gt;Golem&lt;/h3&gt;
 &lt;p&gt;Quisque sodales euismod nibh, gravida venenatis nibh dignissim eget. Morbi gravida enim vel lectus aliquet aliquet.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Praesent commodo cursus magna.&lt;/li&gt;
-&lt;li&gt;Donec id elit non mi porta gravida at eget metus.&lt;/li&gt;
-&lt;li&gt;Nulla vitae elit libero, a pharetra augue.&lt;/li&gt;
+  &lt;li&gt;Praesent commodo cursus magna.&lt;/li&gt;
+  &lt;li&gt;Donec id elit non mi porta gravida at eget metus.&lt;/li&gt;
+  &lt;li&gt;Nulla vitae elit libero, a pharetra augue.&lt;/li&gt;
 &lt;/ul&gt;
-
 
 &lt;p&gt;Cras fermentum nibh quis nisl imperdiet ornare. Sed nisi nunc, dictum sit amet gravida in, finibus rhoncus orci. Donec scelerisque commodo turpis ac venenatis.&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Vestibulum id ligula porta felis euismod semper.&lt;/li&gt;
-&lt;li&gt;Cum sociis natoque penatibus.&lt;/li&gt;
-&lt;li&gt;Maecenas sed diam eget risus.&lt;/li&gt;
+  &lt;li&gt;Vestibulum id ligula porta felis euismod semper.&lt;/li&gt;
+  &lt;li&gt;Cum sociis natoque penatibus.&lt;/li&gt;
+  &lt;li&gt;Maecenas sed diam eget risus.&lt;/li&gt;
 &lt;/ol&gt;
-
 
 &lt;p&gt;Nam ante lacus, ornare ut lacus in, aliquet gravida orci. Donec non dignissim elit. Integer facilisis lorem sed porttitor elementum. Etiam a eleifend justo.&lt;/p&gt;
 
@@ -483,12 +482,11 @@ environment reducing the time to find and retrieve objects.&lt;/li&gt;
   &lt;dd&gt;The programming language used to build advanced Web sites and applications&lt;/dd&gt;
 &lt;/dl&gt;
 
-
 &lt;p&gt;Sed nisi nunc, dictum sit amet gravida in, finibus rhoncus orci. Donec scelerisque commodo turpis ac venenatis.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://placehold.it/800x400&quot; title=&quot;Large example image&quot; alt=&quot;Large example image&quot; /&gt;
-&lt;img src=&quot;http://placehold.it/400x200&quot; title=&quot;Medium example image&quot; alt=&quot;Medium example image&quot; /&gt;
-&lt;img src=&quot;http://placehold.it/200x200&quot; title=&quot;Small example image&quot; alt=&quot;Small example image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://placehold.it/800x400&quot; alt=&quot;Large example image&quot; title=&quot;Large example image&quot; /&gt;
+&lt;img src=&quot;http://placehold.it/400x200&quot; alt=&quot;Medium example image&quot; title=&quot;Medium example image&quot; /&gt;
+&lt;img src=&quot;http://placehold.it/200x200&quot; alt=&quot;Small example image&quot; title=&quot;Small example image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
 
@@ -519,7 +517,6 @@ environment reducing the time to find and retrieve objects.&lt;/li&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-
 &lt;p&gt;Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;
 </description>
 				<pubDate>Sun, 09 Aug 2015 00:00:00 +0200</pubDate>
@@ -531,22 +528,18 @@ environment reducing the time to find and retrieve objects.&lt;/li&gt;
 				<title>Whats Jekyll?</title>
         <description>&lt;p class=&quot;lead&quot;&gt; &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes.&lt;/p&gt;
 
+&lt;p&gt;From &lt;a href=&quot;https://github.com/jekyll/jekyll/blob/master/README.markdown&quot;&gt;the project’s readme&lt;/a&gt;:&lt;/p&gt;
 
-&lt;p&gt;From &lt;a href=&quot;https://github.com/jekyll/jekyll/blob/master/README.markdown&quot;&gt;the project's readme&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;blockquote&gt;&lt;p&gt;Jekyll is a simple, blog aware, static site generator. It takes a template directory [...] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;It's an immensely useful tool. Find out more by &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It’s an immensely useful tool. Find out more by &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
 
 &lt;div id=&quot;example&quot;&gt;&lt;/div&gt;
-
-
 &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.12/d3.js&quot;&gt;&lt;/script&gt;
 
-
 &lt;script src=&quot;/spacetime/js/embed-d3.js&quot;&gt;&lt;/script&gt;
-
-
 
 </description>
 				<pubDate>Sat, 08 Aug 2015 00:00:00 +0200</pubDate>

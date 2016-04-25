@@ -6,6 +6,10 @@
   <title>Statistics vs Frequentist vs Bayesian</title>
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600">
   <link rel="stylesheet" href="/spacetime/style.css">
+<script type="text/javascript"
+             src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
   </head>
 <body>
   <div class="container">
@@ -37,8 +41,7 @@ used to comment and infer knowledge from the data available.</p>
 - Prior information of the data
 </code></pre>
 
-<h1>Example</h1>
-
+<h1 id="example">Example</h1>
 <p>This can be more detailed explained with an example on how to select which
 approach to take.
 We can take a robotics example of a vison based marker detection.
@@ -47,28 +50,25 @@ distance of the marker wrt to the camera.
 We get a series of readings from the camera of the distance based on this we
 need to make an inference on the actual distance of the marker</p>
 
-<p><img src="/assets/arsingle.jpg" alt="My helpful screenshot" /></p>
+<p><img src="/assets/arsingle.jpg" alt="My helpful screenshot" />
+## Statistical approach
+- Input data : Distance measured d_i
+- Method : Take a mean of all the readings and based on central limit theorem the
+actual value will lie be the mean
+- Output : D = mean(d_i)</p>
 
-<h2>Statistical approach</h2>
-
+<h2 id="frequentis-approach">Frequentis approach</h2>
 <ul>
-<li>Input data : Distance measured d_i</li>
-<li>Method : Take a mean of all the readings and based on central limit theorem the
-actual value will lie be the mean</li>
-<li>Output : D = mean(d_i)</li>
-</ul>
-
-
-<h2>Frequentis approach</h2>
-
-<ul>
-<li><p>Input data : Now along with distance measured you also have the error range of the
+  <li>
+    <p>Input data : Now along with distance measured you also have the error range of the
 readings of the camera. We can include this to infer in the frequentist
-approach.</p></li>
-<li><p>Method : Creating the likelihood function which is basically multiplication of
-the gaussian function</p></li>
+approach.</p>
+  </li>
+  <li>
+    <p>Method : Creating the likelihood function which is basically multiplication of
+the gaussian function</p>
+  </li>
 </ul>
-
 
 <p>So for each reading we have the observation and the error range of the camera.
 This can be converted to a gaussian distribution with mean value as the
@@ -78,12 +78,10 @@ We will multiply these gaussian distribution(Likelihood equation).
 The resulting distribution will be the distribution of the infered distance.</p>
 
 <ul>
-<li>Ouput : P(D) = Likelihood(d_i)</li>
+  <li>Ouput : P(D) = Likelihood(d_i)</li>
 </ul>
 
-
-<h2>Bayesian approach</h2>
-
+<h2 id="bayesian-approach">Bayesian approach</h2>
 <p>Input data : Distance measured .
 Error range of the camera .
 Now along with this we have an additional information that based on the
@@ -100,9 +98,11 @@ error range is high .</p>
 <span class="nx">trigger_alert</span><span class="p">();</span></code></pre></div>
 
 
-
-
 </div>
+<script type="text/javascript"
+             src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
 
   </div>
 </body>

@@ -6,6 +6,10 @@
   <title>Probability explained !</title>
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600">
   <link rel="stylesheet" href="/spacetime/style.css">
+<script type="text/javascript"
+             src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
   </head>
 <body>
   <div class="container">
@@ -22,24 +26,21 @@
   <p>Proabability as we know can be defined in many ways. Will try to amalgamate
 different definitions.</p>
 
-<h1>Observable and Un-Observeable variables</h1>
-
+<h1 id="observable-and-un-observeable-variables">Observable and Un-Observeable variables</h1>
 <p>The outcomes of an experiment or data which can be read are called as an
 <strong>observable variables</strong>. While extra pieces of knowledge that we do not have
 access to are names as the <strong>unobservable variables</strong>.</p>
 
-<h1>Process</h1>
-
+<h1 id="process">Process</h1>
 <p>Based on the <strong>unobservable variables</strong> the process is a probability
 distribution which determines the
 <strong>observable variables</strong>.</p>
 
-<h1>Formulation</h1>
-
+<h1 id="formulation">Formulation</h1>
 <p>Let <strong>z</strong> be the unobservable variables and <strong>x</strong> be the observable variables,
 then we have</p>
 
-<p>$$x = f(z)$$</p>
+<script type="math/tex; mode=display">x = f(z)</script>
 
 <p>where f is the function determining the observable based on the unobservable
 variables. But this cannot be used to model the <strong>process</strong>.</p>
@@ -47,51 +48,37 @@ variables. But this cannot be used to model the <strong>process</strong>.</p>
 <p>Let us define outcome X as a random variable drawn from a probability
 distribution P(X = x) that specifies the process</p>
 
-<h1>Example</h1>
+<h1 id="example">Example</h1>
 
-<h2>Coin toss</h2>
+<h2 id="coin-toss">Coin toss</h2>
 
-<h3>Observable Variable :</h3>
-
-<pre><code>Outcomes of coin toss (head or toss)
-</code></pre>
-
-<h3>Unobservable Variable :</h3>
-
-<pre><code> parameter of the distribution(\\p_0\\)
-</code></pre>
-
-<h3>Process : P(X = head) and P(X = tail)</h3>
-
-<pre><code>Since there are only 2 outcomes the underlying distrbution is Bernouli distribution.
+<h3 id="observable-variable-">Observable Variable :</h3>
+<pre><code>Outcomes of coin toss (head or toss) ### Unobservable Variable :  
+ parameter of the distribution(\\p_0\\) ### Process : P(X = head) and P(X = tail)
+Since there are only 2 outcomes the underlying distrbution is Bernouli distribution.
 Bernouli distribution can be expressed by single parameter. In this case
 \\p_0\\ i.e. P(X = head ) = \\p_0\\  P(X = tail )= 1 - P(X = head)
 </code></pre>
 
-<h2>Sensor readings</h2>
+<h2 id="sensor-readings">Sensor readings</h2>
 
-<h3>Observable Variable :</h3>
-
-<pre><code>Observed sensor readings
-</code></pre>
-
-<h3>Unobservable Variable :</h3>
-
-<pre><code>parameter of the distribution(\\ \mu and \sigma \\)
-</code></pre>
-
-<h3>Process : \ Gauss(\mu and \sigma) \</h3>
-
-<pre><code>The underlying process can be seen as a Gaussian distribution with the mu
+<h3 id="observable-variable--1">Observable Variable :</h3>
+<pre><code>Observed sensor readings ### Unobservable Variable :
+parameter of the distribution(\\ \mu and \sigma \\) ### Process : \\ Gauss(\mu and \sigma) \\
+The underlying process can be seen as a Gaussian distribution with the mu
 as the observed reading and the sigma as the error in the measuring device.
 </code></pre>
 
-<h1>Samples</h1>
-
+<h1 id="samples">Samples</h1>
 <p>What if we do not know the P(X) and want to estimate this from a single then we
 have to depend on statistics to determine this.</p>
 
+
 </div>
+<script type="text/javascript"
+             src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
 
   </div>
 </body>

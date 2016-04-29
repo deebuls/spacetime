@@ -40,7 +40,7 @@ prespective the most useful name which can be used in almost all examples is
 
 &lt;p&gt;So lets define both :&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;Fact&lt;/code&gt; : The latent variable we are trying to learn
+&lt;p&gt;&lt;code&gt;Fact&lt;/code&gt; : The latent variable we are trying to learn&lt;br /&gt;
 &lt;code&gt;Evidence&lt;/code&gt; : The observations we make during trials from which we have to
 learn.&lt;/p&gt;
 
@@ -62,8 +62,8 @@ account. Now the question is if we do more marketing and increase the unique
 visitors count to 10000 then how many people will register? How confident are
 you about the results?&lt;/p&gt;
 
-    &lt;p&gt;Evidence : 18 out of 833 unique visitor made account.
- Fact : Probability that an unique visitor will create an account.&lt;/p&gt;
+    &lt;p&gt;&lt;code&gt;Evidence&lt;/code&gt; : 18 out of 833 unique visitor made account. &lt;br /&gt;
+ &lt;code&gt;Fact&lt;/code&gt; : Probability that an unique visitor will create an account.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;

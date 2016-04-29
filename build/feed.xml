@@ -44,6 +44,9 @@ prespective the most useful name which can be used in almost all examples is
 &lt;code&gt;Evidence&lt;/code&gt; : The observations we make during trials from which we have to
 learn.&lt;/p&gt;
 
+&lt;p&gt;Baye’s Theorem can be re read as follows based on the new definitions
+&amp;gt; Bayes theorem is about updating our belief of the fact based on evidences.&lt;/p&gt;
+
 &lt;p&gt;From the definition we have made the assumption that is predominant in naming
 the variables as fact and evidence, which is that all the examples explained
 here will have some hidden variable and some observations. Baye’s theorem is
@@ -65,11 +68,15 @@ you about the results?&lt;/p&gt;
     &lt;p&gt;&lt;code&gt;Evidence&lt;/code&gt; : 18 out of 833 unique visitor made account. &lt;br /&gt;
  &lt;code&gt;Fact&lt;/code&gt; : Probability that an unique visitor will create an account.&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
+&lt;p&gt;&lt;a href=&quot;https://www.chrisstucchio.com/blog/2013/bayesian_analysis_conversion_rates.html&quot;&gt;Solution Explained here&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </description>
-				<pubDate>Mon, 25 Apr 2016 00:00:00 +0200</pubDate>
+				<pubDate>2016-04-25 00:00:00 +0200</pubDate>
 				<link>/2016/04/25/bayes-evidence-facts-examples.html</link>
 				<guid isPermaLink="true">/2016/04/25/bayes-evidence-facts-examples.html</guid>
 			</item>
@@ -87,7 +94,7 @@ you about the results?&lt;/p&gt;
   &lt;li&gt;Bayesian Inference&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-				<pubDate>Mon, 18 Apr 2016 00:00:00 +0200</pubDate>
+				<pubDate>2016-04-18 00:00:00 +0200</pubDate>
 				<link>/2016/04/18/terms-used.html</link>
 				<guid isPermaLink="true">/2016/04/18/terms-used.html</guid>
 			</item>
@@ -121,7 +128,7 @@ which they can be applied&lt;/p&gt;
   &lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-				<pubDate>Sat, 16 Apr 2016 00:00:00 +0200</pubDate>
+				<pubDate>2016-04-16 00:00:00 +0200</pubDate>
 				<link>/2016/04/16/distributions.html</link>
 				<guid isPermaLink="true">/2016/04/16/distributions.html</guid>
 			</item>
@@ -137,7 +144,7 @@ kruschke. Doing Bayesian Data Analysis. Chapter 2&lt;/li&gt;
  chap. 6) Sherlock Homes to Doctor Watson&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-				<pubDate>Fri, 15 Apr 2016 00:00:00 +0200</pubDate>
+				<pubDate>2016-04-15 00:00:00 +0200</pubDate>
 				<link>/2016/04/15/model-learning-quotes.html</link>
 				<guid isPermaLink="true">/2016/04/15/model-learning-quotes.html</guid>
 			</item>
@@ -159,7 +166,7 @@ environments&lt;/a&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 </description>
-				<pubDate>Thu, 14 Apr 2016 00:00:00 +0200</pubDate>
+				<pubDate>2016-04-14 00:00:00 +0200</pubDate>
 				<link>/2016/04/14/workshops-publications-learning-smart-home.html</link>
 				<guid isPermaLink="true">/2016/04/14/workshops-publications-learning-smart-home.html</guid>
 			</item>
@@ -220,7 +227,7 @@ Learning&lt;/a&gt;
 &lt;/ul&gt;
 
 </description>
-				<pubDate>Wed, 13 Apr 2016 00:00:00 +0200</pubDate>
+				<pubDate>2016-04-13 00:00:00 +0200</pubDate>
 				<link>/2016/04/13/what-i-know-about-probability-programming.html</link>
 				<guid isPermaLink="true">/2016/04/13/what-i-know-about-probability-programming.html</guid>
 			</item>
@@ -278,7 +285,7 @@ as the observed reading and the sigma as the error in the measuring device.
 have to depend on statistics to determine this.&lt;/p&gt;
 
 </description>
-				<pubDate>Wed, 16 Dec 2015 00:00:00 +0100</pubDate>
+				<pubDate>2015-12-16 00:00:00 +0100</pubDate>
 				<link>/2015/12/16/probability-explained.html</link>
 				<guid isPermaLink="true">/2015/12/16/probability-explained.html</guid>
 			</item>
@@ -288,14 +295,14 @@ have to depend on statistics to determine this.&lt;/p&gt;
         <description>&lt;p&gt;This is a blog to conclude my understanding about the different approaches that can be
 used to comment and infer knowledge from the data available.&lt;/p&gt;
 
-&lt;p&gt;The approaches can be broadly seperated into 3 groups&lt;/p&gt;
+&lt;p&gt;The approaches can be broadly seperated into 3 groups &lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;- Statistical approach
 - Frequentist approach
 - Bayesian approach
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;The selection of the approach depends on various factors some major ones are&lt;/p&gt;
+&lt;p&gt;The selection of the approach depends on various factors some major ones are &lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;- The answers we want to infer from the data
 - The amount of data 
@@ -340,7 +347,7 @@ We will multiply these gaussian distribution(Likelihood equation).
 The resulting distribution will be the distribution of the infered distance.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Ouput : P(D) = Likelihood(d_i)&lt;/li&gt;
+  &lt;li&gt;Ouput : P(D) = Likelihood(d_i) &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;bayesian-approach&quot;&gt;Bayesian approach&lt;/h2&gt;
@@ -349,18 +356,19 @@ Error range of the camera .
 Now along with this we have an additional information that based on the
 distance of the camera the error range varies. If the marker is near the camera
 the error range is less while if the marker is far away from the camera the
-error range is high .&lt;/p&gt;
+error range is high . &lt;/p&gt;
 
-&lt;p&gt;NOTE : need to think&lt;/p&gt;
+&lt;p&gt;NOTE : need to think &lt;/p&gt;
+&lt;div&gt;
+  &lt;pre&gt;&lt;code class=&quot;js&quot;&gt;function trigger_alert(){
+  alert(&amp;quot;Lorem Ipsum dolor sit amet&amp;quot;);
+}
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;trigger_alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Lorem Ipsum dolor sit amet&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;trigger_alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+trigger_alert();&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 </description>
-				<pubDate>Sat, 05 Dec 2015 00:00:00 +0100</pubDate>
+				<pubDate>2015-12-05 00:00:00 +0100</pubDate>
 				<link>/2015/12/05/statistics-frequentist-bayes.html</link>
 				<guid isPermaLink="true">/2015/12/05/statistics-frequentist-bayes.html</guid>
 			</item>
@@ -422,7 +430,7 @@ environment reducing the time to find and retrieve objects.&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
-				<pubDate>Wed, 04 Nov 2015 00:00:00 +0100</pubDate>
+				<pubDate>2015-11-04 00:00:00 +0100</pubDate>
 				<link>/2015/11/04/problem-statement.html</link>
 				<guid isPermaLink="true">/2015/11/04/problem-statement.html</guid>
 			</item>
@@ -446,11 +454,13 @@ environment reducing the time to find and retrieve objects.&lt;/li&gt;
 &lt;h2 id=&quot;dugem&quot;&gt;Dugem&lt;/h2&gt;
 &lt;p&gt;Nullam vehicula iaculis tortor, in cursus enim auctor vitae. Duis semper pulvinar justo, at vestibulum dolor. Cras fermentum nibh quis nisl imperdiet ornare. Sed nisi nunc, dictum sit amet gravida in, finibus rhoncus orci. Donec scelerisque commodo turpis ac venenatis.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;trigger_alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Lorem Ipsum dolor sit amet&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;div&gt;
+  &lt;pre&gt;&lt;code class=&quot;js&quot;&gt;function trigger_alert(){
+  alert(&amp;quot;Lorem Ipsum dolor sit amet&amp;quot;);
+}
 
-&lt;span class=&quot;nx&quot;&gt;trigger_alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+trigger_alert();&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;golem&quot;&gt;Golem&lt;/h3&gt;
 &lt;p&gt;Quisque sodales euismod nibh, gravida venenatis nibh dignissim eget. Morbi gravida enim vel lectus aliquet aliquet.&lt;/p&gt;
@@ -469,7 +479,7 @@ environment reducing the time to find and retrieve objects.&lt;/li&gt;
   &lt;li&gt;Maecenas sed diam eget risus.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Nam ante lacus, ornare ut lacus in, aliquet gravida orci. Donec non dignissim elit. Integer facilisis lorem sed porttitor elementum. Etiam a eleifend justo.&lt;/p&gt;
+&lt;p&gt;Nam ante lacus, ornare ut lacus in, aliquet gravida orci. Donec non dignissim elit. Integer facilisis lorem sed porttitor elementum. Etiam a eleifend justo. &lt;/p&gt;
 
 &lt;dl&gt;
   &lt;dt&gt;HyperText Markup Language (HTML)&lt;/dt&gt;
@@ -519,7 +529,7 @@ environment reducing the time to find and retrieve objects.&lt;/li&gt;
 
 &lt;p&gt;Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;
 </description>
-				<pubDate>Sun, 09 Aug 2015 00:00:00 +0200</pubDate>
+				<pubDate>2015-08-09 00:00:00 +0200</pubDate>
 				<link>/2015/08/09/example-content.html</link>
 				<guid isPermaLink="true">/2015/08/09/example-content.html</guid>
 			</item>
@@ -542,7 +552,7 @@ environment reducing the time to find and retrieve objects.&lt;/li&gt;
 &lt;script src=&quot;/spacetime/js/embed-d3.js&quot;&gt;&lt;/script&gt;
 
 </description>
-				<pubDate>Sat, 08 Aug 2015 00:00:00 +0200</pubDate>
+				<pubDate>2015-08-08 00:00:00 +0200</pubDate>
 				<link>/2015/08/08/whats-jekyll.html</link>
 				<guid isPermaLink="true">/2015/08/08/whats-jekyll.html</guid>
 			</item>

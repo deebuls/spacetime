@@ -38,9 +38,12 @@ So lets rename the variables and rewrite the Baye's theorem
 
 So lets define both :
 
-`Fact` : The latent variable we are trying to learn
+`Fact` : The latent variable we are trying to learn\\
 `Evidence` : The observations we make during trials from which we have to
 learn.
+
+Baye's Theorem can be re read as follows based on the new definitions
+> Bayes theorem is about updating our belief of the fact based on evidences.
 
 
 From the definition we have made the assumption that is predominant in naming
@@ -60,7 +63,9 @@ account. Now the question is if we do more marketing and increase the unique
 visitors count to 10000 then how many people will register? How confident are
 you about the results?
 
-    Evidence : 18 out of 833 unique visitor made account.
-    Fact : Probability that an unique visitor will create an account.
+    `Evidence` : 18 out of 833 unique visitor made account. \\
+    `Fact` : Probability that an unique visitor will create an account.
+
+[Solution Explained here](https://www.chrisstucchio.com/blog/2013/bayesian_analysis_conversion_rates.html)
 
 2. 
